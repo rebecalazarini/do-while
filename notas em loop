@@ -1,0 +1,30 @@
+//Programa que peça as notas,soma e media, faça uma condição que se o usuario digitar 1 o sistema volta para o loop e se digitar 2 o loop é parado
+#include <stdio.h>
+int main(){
+    
+float nota1,nota2,nota3,media,numero;
+
+do {
+    printf("Digite a nota1:\n ");
+scanf("%f", &nota1);
+
+printf("Digite a nota2:\n ");
+scanf("%f", &nota2);
+
+printf("Digite a nota3:\n ");
+scanf("%f", &nota3);
+ 
+ 
+ 
+    media=(nota1+nota2+nota3)/3;
+    printf("Media = %.1f \n",media );
+    
+    printf("Digite 1 para continuar ou 2 para sair: ");
+        scanf("%f", &numero);
+    
+}while(numero != 2);
+
+
+    
+    return 0;
+    }
